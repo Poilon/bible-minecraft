@@ -1177,5 +1177,695 @@ const minecraftItems = [
         recipes: [
             {ingredients: ["coquille", "coquille", "coquille", "coquille", "cœur_mer", "coquille", "coquille", "coquille", "coquille"], result: "Conduit"}
         ]
+    },
+    {
+        id: "copper_axe",
+        name: "Hache en cuivre",
+        icon: "🪓",
+        category: "tools",
+        description: "Hache en cuivre, plus durable que la pierre mais moins que le fer",
+        properties: ["Durabilité: 131", "Efficacité: pierre+", "Enchantable"],
+        obtention: "Craft avec lingots de cuivre et bâtons",
+        recipes: [{ingredients: ["cuivre", "cuivre", "", "cuivre", "bâton", "", "", "bâton", ""], result: "Hache en cuivre"}]
+    },
+    {
+        id: "copper_pickaxe",
+        name: "Pioche en cuivre",
+        icon: "⛏️",
+        category: "tools",
+        description: "Pioche en cuivre, mine plus vite que la pierre",
+        properties: ["Durabilité: 131", "Efficacité: pierre+", "Enchantable"],
+        obtention: "Craft avec lingots de cuivre et bâtons",
+        recipes: [{ingredients: ["cuivre", "cuivre", "cuivre", "", "bâton", "", "", "bâton", ""], result: "Pioche en cuivre"}]
+    },
+    {
+        id: "copper_shovel",
+        name: "Pelle en cuivre",
+        icon: "🥄",
+        category: "tools",
+        description: "Pelle en cuivre pour creuser",
+        properties: ["Durabilité: 131", "Efficacité: pierre+", "Enchantable"],
+        obtention: "Craft avec lingot de cuivre et bâtons",
+        recipes: [{ingredients: ["cuivre", "", "", "bâton", "", "", "bâton", "", ""], result: "Pelle en cuivre"}]
+    },
+    {
+        id: "copper_hoe",
+        name: "Houe en cuivre",
+        icon: "🔱",
+        category: "tools",
+        description: "Houe en cuivre pour labourer",
+        properties: ["Durabilité: 131", "Efficacité: pierre+", "Enchantable"],
+        obtention: "Craft avec lingots de cuivre et bâtons",
+        recipes: [{ingredients: ["cuivre", "cuivre", "", "", "bâton", "", "", "bâton", ""], result: "Houe en cuivre"}]
+    },
+    {
+        id: "copper_sword",
+        name: "Épée en cuivre",
+        icon: "⚔️",
+        category: "weapons",
+        description: "Épée en cuivre, dégâts équivalents à la pierre",
+        properties: ["Dégâts: 5", "Durabilité: 131", "Enchantable"],
+        obtention: "Craft avec lingots de cuivre et bâton",
+        recipes: [{ingredients: ["cuivre", "", "", "cuivre", "", "", "bâton", "", ""], result: "Épée en cuivre"}]
+    },
+    {
+        id: "copper_helmet",
+        name: "Casque en cuivre",
+        icon: "🪖",
+        category: "armor",
+        description: "Casque en cuivre, protection entre cuir et fer",
+        properties: ["Armor: 2", "Durabilité: 77", "Enchantable"],
+        obtention: "Craft avec lingots de cuivre",
+        recipes: [{ingredients: ["cuivre", "cuivre", "cuivre", "cuivre", "", "cuivre", "", "", ""], result: "Casque en cuivre"}]
+    },
+    {
+        id: "copper_chestplate",
+        name: "Plastron en cuivre",
+        icon: "🦺",
+        category: "armor",
+        description: "Plastron en cuivre, protection entre cuir et fer",
+        properties: ["Armor: 5", "Durabilité: 112", "Enchantable"],
+        obtention: "Craft avec lingots de cuivre",
+        recipes: [{ingredients: ["cuivre", "", "cuivre", "cuivre", "cuivre", "cuivre", "cuivre", "cuivre", "cuivre"], result: "Plastron en cuivre"}]
+    },
+    {
+        id: "copper_leggings",
+        name: "Jambières en cuivre",
+        icon: "👖",
+        category: "armor",
+        description: "Jambières en cuivre, protection entre cuir et fer",
+        properties: ["Armor: 4", "Durabilité: 105", "Enchantable"],
+        obtention: "Craft avec lingots de cuivre",
+        recipes: [{ingredients: ["cuivre", "cuivre", "cuivre", "cuivre", "", "cuivre", "cuivre", "", "cuivre"], result: "Jambières en cuivre"}]
+    },
+    {
+        id: "copper_boots",
+        name: "Bottes en cuivre",
+        icon: "👢",
+        category: "armor",
+        description: "Bottes en cuivre, protection entre cuir et fer",
+        properties: ["Armor: 1", "Durabilité: 91", "Enchantable"],
+        obtention: "Craft avec lingots de cuivre",
+        recipes: [{ingredients: ["cuivre", "", "cuivre", "cuivre", "", "cuivre", "", "", ""], result: "Bottes en cuivre"}]
+    },
+    {
+        id: "netherite_helmet",
+        name: "Casque en netherite",
+        icon: "🪖",
+        category: "armor",
+        description: "Casque en netherite, la meilleure protection",
+        properties: ["Armor: 3", "Toughness: 3", "Knockback resistance: 0.1", "Résistant au feu"],
+        obtention: "Upgrade de casque diamant avec netherite",
+        recipes: []
+    },
+    {
+        id: "netherite_chestplate",
+        name: "Plastron en netherite",
+        icon: "🦺",
+        category: "armor",
+        description: "Plastron en netherite, la meilleure protection",
+        properties: ["Armor: 8", "Toughness: 3", "Knockback resistance: 0.1", "Résistant au feu"],
+        obtention: "Upgrade de plastron diamant avec netherite",
+        recipes: []
+    },
+    {
+        id: "netherite_leggings",
+        name: "Jambières en netherite",
+        icon: "👖",
+        category: "armor",
+        description: "Jambières en netherite, la meilleure protection",
+        properties: ["Armor: 6", "Toughness: 3", "Knockback resistance: 0.1", "Résistant au feu"],
+        obtention: "Upgrade de jambières diamant avec netherite",
+        recipes: []
+    },
+    {
+        id: "netherite_boots",
+        name: "Bottes en netherite",
+        icon: "👢",
+        category: "armor",
+        description: "Bottes en netherite, la meilleure protection",
+        properties: ["Armor: 3", "Toughness: 3", "Knockback resistance: 0.1", "Résistant au feu"],
+        obtention: "Upgrade de bottes diamant avec netherite",
+        recipes: []
+    },
+    {
+        id: "netherite_axe",
+        name: "Hache en netherite",
+        icon: "🪓",
+        category: "tools",
+        description: "Hache en netherite, la plus puissante",
+        properties: ["Durabilité: 2031", "Efficacité maximale", "Résistant au feu"],
+        obtention: "Upgrade de hache diamant avec netherite",
+        recipes: []
+    },
+    {
+        id: "netherite_pickaxe",
+        name: "Pioche en netherite",
+        icon: "⛏️",
+        category: "tools",
+        description: "Pioche en netherite, la plus puissante",
+        properties: ["Durabilité: 2031", "Efficacité maximale", "Résistant au feu"],
+        obtention: "Upgrade de pioche diamant avec netherite",
+        recipes: []
+    },
+    {
+        id: "netherite_shovel",
+        name: "Pelle en netherite",
+        icon: "🥄",
+        category: "tools",
+        description: "Pelle en netherite, la plus puissante",
+        properties: ["Durabilité: 2031", "Efficacité maximale", "Résistant au feu"],
+        obtention: "Upgrade de pelle diamant avec netherite",
+        recipes: []
+    },
+    {
+        id: "netherite_hoe",
+        name: "Houe en netherite",
+        icon: "🔱",
+        category: "tools",
+        description: "Houe en netherite, la plus puissante",
+        properties: ["Durabilité: 2031", "Efficacité maximale", "Résistant au feu"],
+        obtention: "Upgrade de houe diamant avec netherite",
+        recipes: []
+    },
+    {
+        id: "netherite_sword",
+        name: "Épée en netherite",
+        icon: "⚔️",
+        category: "weapons",
+        description: "Épée en netherite, la plus puissante",
+        properties: ["Dégâts: 8", "Durabilité: 2031", "Résistant au feu"],
+        obtention: "Upgrade d'épée diamant avec netherite",
+        recipes: []
+    },
+    {
+        id: "ancient_debris",
+        name: "Débris antiques",
+        icon: "🔸",
+        category: "items",
+        description: "Minerai rare du Nether pour créer la netherite",
+        properties: ["Résistant aux explosions", "Très rare", "Y: 8-22 dans le Nether"],
+        obtention: "Minage profond dans le Nether",
+        recipes: []
+    },
+    {
+        id: "netherite_scrap",
+        name: "Fragment de netherite",
+        icon: "🔹",
+        category: "items",
+        description: "Fragment obtenu en fondant les débris antiques",
+        properties: ["Matériau de craft", "Résistant au feu"],
+        obtention: "Fonte des débris antiques",
+        recipes: []
+    },
+    {
+        id: "copper_ore",
+        name: "Minerai de cuivre",
+        icon: "🟫",
+        category: "blocks",
+        description: "Minerai de cuivre trouvé dans l'overworld",
+        properties: ["Y: 0-96", "Fréquent", "Fondable"],
+        obtention: "Minage",
+        recipes: []
+    },
+    {
+        id: "deepslate_copper_ore",
+        name: "Minerai de cuivre d'ardoise",
+        icon: "⬛",
+        category: "blocks",
+        description: "Minerai de cuivre dans l'ardoise profonde",
+        properties: ["Y: 0-16", "Plus dur à miner"],
+        obtention: "Minage profond",
+        recipes: []
+    },
+    {
+        id: "raw_copper",
+        name: "Cuivre brut",
+        icon: "🟤",
+        category: "items",
+        description: "Cuivre brut obtenu par minage",
+        properties: ["Matériau de base", "Fondable"],
+        obtention: "Minage de minerai de cuivre",
+        recipes: []
+    },
+    {
+        id: "copper_ingot",
+        name: "Lingot de cuivre",
+        icon: "🟠",
+        category: "items",
+        description: "Lingot de cuivre obtenu par fonte",
+        properties: ["Matériau de craft", "Oxydable"],
+        obtention: "Fonte du cuivre brut",
+        recipes: []
+    },
+    {
+        id: "crossbow",
+        name: "Arbalète",
+        icon: "🏹",
+        category: "weapons",
+        description: "Arme à distance plus puissante que l'arc",
+        properties: ["Dégâts: 9", "Durabilité: 326", "Rechargeable"],
+        obtention: "Craft avec bâtons, fer et ficelle",
+        recipes: [{ingredients: ["bâton", "fer", "bâton", "ficelle", "crochet", "ficelle", "", "bâton", ""], result: "Arbalète"}]
+    },
+    {
+        id: "trident",
+        name: "Trident",
+        icon: "🔱",
+        category: "weapons",
+        description: "Arme de mêlée et distance des noyés",
+        properties: ["Dégâts: 9", "Durabilité: 250", "Lançable"],
+        obtention: "Drop rare des Noyés",
+        recipes: []
+    },
+    {
+        id: "chainmail_helmet",
+        name: "Casque en mailles",
+        icon: "🪖",
+        category: "armor",
+        description: "Casque en mailles, protection moyenne",
+        properties: ["Armor: 2", "Durabilité: 165", "Non craftable"],
+        obtention: "Loot de coffres ou commerce",
+        recipes: []
+    },
+    {
+        id: "chainmail_chestplate",
+        name: "Plastron en mailles",
+        icon: "🦺",
+        category: "armor",
+        description: "Plastron en mailles, protection moyenne",
+        properties: ["Armor: 5", "Durabilité: 240", "Non craftable"],
+        obtention: "Loot de coffres ou commerce",
+        recipes: []
+    },
+    {
+        id: "chainmail_leggings",
+        name: "Jambières en mailles",
+        icon: "👖",
+        category: "armor",
+        description: "Jambières en mailles, protection moyenne",
+        properties: ["Armor: 4", "Durabilité: 225", "Non craftable"],
+        obtention: "Loot de coffres ou commerce",
+        recipes: []
+    },
+    {
+        id: "chainmail_boots",
+        name: "Bottes en mailles",
+        icon: "👢",
+        category: "armor",
+        description: "Bottes en mailles, protection moyenne",
+        properties: ["Armor: 1", "Durabilité: 195", "Non craftable"],
+        obtention: "Loot de coffres ou commerce",
+        recipes: []
+    },
+    {
+        id: "turtle_helmet",
+        name: "Carapace de tortue",
+        icon: "🐢",
+        category: "armor",
+        description: "Casque fait d'écailles de tortue",
+        properties: ["Armor: 2", "Respiration aquatique +10s", "Durabilité: 275"],
+        obtention: "Craft avec 5 écailles de tortue",
+        recipes: [{ingredients: ["écaille", "écaille", "écaille", "écaille", "", "écaille", "", "", ""], result: "Carapace de tortue"}]
+    },
+    {
+        id: "spyglass",
+        name: "Longue-vue",
+        icon: "🔭",
+        category: "tools",
+        description: "Permet de voir au loin avec zoom",
+        properties: ["Zoom x10", "Vision longue distance"],
+        obtention: "Craft avec éclat d'améthyste et cuivre",
+        recipes: [{ingredients: ["", "améthyste", "", "", "cuivre", "", "", "cuivre", ""], result: "Longue-vue"}]
+    },
+    {
+        id: "brush",
+        name: "Pinceau",
+        icon: "🖌️",
+        category: "tools",
+        description: "Outil pour l'archéologie",
+        properties: ["Archéologie", "Sable suspect", "Gravier suspect"],
+        obtention: "Craft avec plume, cuivre et bâton",
+        recipes: [{ingredients: ["", "", "plume", "", "cuivre", "", "bâton", "", ""], result: "Pinceau"}]
+    },
+    {
+        id: "lightning_rod",
+        name: "Paratonnerre",
+        icon: "⚡",
+        category: "redstone",
+        description: "Attire et redirige la foudre",
+        properties: ["Attire foudre dans 128 blocs", "Signal redstone", "Protection"],
+        obtention: "Craft avec 3 lingots de cuivre",
+        recipes: [{ingredients: ["", "cuivre", "", "", "cuivre", "", "", "cuivre", ""], result: "Paratonnerre"}]
+    },
+    {
+        id: "white_wool",
+        name: "Laine blanche",
+        icon: "⬜",
+        category: "blocks",
+        description: "Laine de couleur blanche",
+        properties: ["Inflammable", "Colorable", "Isolation sonore"],
+        obtention: "Moutons ou craft avec ficelle",
+        recipes: []
+    },
+    {
+        id: "orange_wool",
+        name: "Laine orange",
+        icon: "🟧",
+        category: "blocks",
+        description: "Laine de couleur orange",
+        properties: ["Inflammable", "Colorée", "Isolation sonore"],
+        obtention: "Teinture de laine blanche",
+        recipes: [{ingredients: ["laine_blanche", "teinture_orange", "", "", "", "", "", "", ""], result: "Laine orange"}]
+    },
+    {
+        id: "magenta_wool",
+        name: "Laine magenta",
+        icon: "🟪",
+        category: "blocks",
+        description: "Laine de couleur magenta",
+        properties: ["Inflammable", "Colorée", "Isolation sonore"],
+        obtention: "Teinture de laine blanche",
+        recipes: [{ingredients: ["laine_blanche", "teinture_magenta", "", "", "", "", "", "", ""], result: "Laine magenta"}]
+    },
+    {
+        id: "light_blue_wool",
+        name: "Laine bleu clair",
+        icon: "🔵",
+        category: "blocks",
+        description: "Laine de couleur bleu clair",
+        properties: ["Inflammable", "Colorée", "Isolation sonore"],
+        obtention: "Teinture de laine blanche",
+        recipes: [{ingredients: ["laine_blanche", "teinture_bleu_clair", "", "", "", "", "", "", ""], result: "Laine bleu clair"}]
+    },
+    {
+        id: "yellow_wool",
+        name: "Laine jaune",
+        icon: "🟨",
+        category: "blocks",
+        description: "Laine de couleur jaune",
+        properties: ["Inflammable", "Colorée", "Isolation sonore"],
+        obtention: "Teinture de laine blanche",
+        recipes: [{ingredients: ["laine_blanche", "teinture_jaune", "", "", "", "", "", "", ""], result: "Laine jaune"}]
+    },
+    {
+        id: "lime_wool",
+        name: "Laine vert clair",
+        icon: "🟩",
+        category: "blocks",
+        description: "Laine de couleur vert clair",
+        properties: ["Inflammable", "Colorée", "Isolation sonore"],
+        obtention: "Teinture de laine blanche",
+        recipes: [{ingredients: ["laine_blanche", "teinture_vert_clair", "", "", "", "", "", "", ""], result: "Laine vert clair"}]
+    },
+    {
+        id: "pink_wool",
+        name: "Laine rose",
+        icon: "🌸",
+        category: "blocks",
+        description: "Laine de couleur rose",
+        properties: ["Inflammable", "Colorée", "Isolation sonore"],
+        obtention: "Teinture de laine blanche",
+        recipes: [{ingredients: ["laine_blanche", "teinture_rose", "", "", "", "", "", "", ""], result: "Laine rose"}]
+    },
+    {
+        id: "gray_wool",
+        name: "Laine grise",
+        icon: "◼️",
+        category: "blocks",
+        description: "Laine de couleur grise",
+        properties: ["Inflammable", "Colorée", "Isolation sonore"],
+        obtention: "Teinture de laine blanche",
+        recipes: [{ingredients: ["laine_blanche", "teinture_grise", "", "", "", "", "", "", ""], result: "Laine grise"}]
+    },
+    {
+        id: "light_gray_wool",
+        name: "Laine gris clair",
+        icon: "◻️",
+        category: "blocks",
+        description: "Laine de couleur gris clair",
+        properties: ["Inflammable", "Colorée", "Isolation sonore"],
+        obtention: "Teinture de laine blanche",
+        recipes: [{ingredients: ["laine_blanche", "teinture_gris_clair", "", "", "", "", "", "", ""], result: "Laine gris clair"}]
+    },
+    {
+        id: "cyan_wool",
+        name: "Laine cyan",
+        icon: "🔷",
+        category: "blocks",
+        description: "Laine de couleur cyan",
+        properties: ["Inflammable", "Colorée", "Isolation sonore"],
+        obtention: "Teinture de laine blanche",
+        recipes: [{ingredients: ["laine_blanche", "teinture_cyan", "", "", "", "", "", "", ""], result: "Laine cyan"}]
+    },
+    {
+        id: "purple_wool",
+        name: "Laine violette",
+        icon: "🟣",
+        category: "blocks",
+        description: "Laine de couleur violette",
+        properties: ["Inflammable", "Colorée", "Isolation sonore"],
+        obtention: "Teinture de laine blanche",
+        recipes: [{ingredients: ["laine_blanche", "teinture_violette", "", "", "", "", "", "", ""], result: "Laine violette"}]
+    },
+    {
+        id: "blue_wool",
+        name: "Laine bleue",
+        icon: "🔵",
+        category: "blocks",
+        description: "Laine de couleur bleue",
+        properties: ["Inflammable", "Colorée", "Isolation sonore"],
+        obtention: "Teinture de laine blanche",
+        recipes: [{ingredients: ["laine_blanche", "teinture_bleue", "", "", "", "", "", "", ""], result: "Laine bleue"}]
+    },
+    {
+        id: "brown_wool",
+        name: "Laine marron",
+        icon: "🟤",
+        category: "blocks",
+        description: "Laine de couleur marron",
+        properties: ["Inflammable", "Colorée", "Isolation sonore"],
+        obtention: "Teinture de laine blanche",
+        recipes: [{ingredients: ["laine_blanche", "teinture_marron", "", "", "", "", "", "", ""], result: "Laine marron"}]
+    },
+    {
+        id: "green_wool",
+        name: "Laine verte",
+        icon: "🟢",
+        category: "blocks",
+        description: "Laine de couleur verte",
+        properties: ["Inflammable", "Colorée", "Isolation sonore"],
+        obtention: "Teinture de laine blanche",
+        recipes: [{ingredients: ["laine_blanche", "teinture_verte", "", "", "", "", "", "", ""], result: "Laine verte"}]
+    },
+    {
+        id: "red_wool",
+        name: "Laine rouge",
+        icon: "🟥",
+        category: "blocks",
+        description: "Laine de couleur rouge",
+        properties: ["Inflammable", "Colorée", "Isolation sonore"],
+        obtention: "Teinture de laine blanche",
+        recipes: [{ingredients: ["laine_blanche", "teinture_rouge", "", "", "", "", "", "", ""], result: "Laine rouge"}]
+    },
+    {
+        id: "black_wool",
+        name: "Laine noire",
+        icon: "⬛",
+        category: "blocks",
+        description: "Laine de couleur noire",
+        properties: ["Inflammable", "Colorée", "Isolation sonore"],
+        obtention: "Teinture de laine blanche",
+        recipes: [{ingredients: ["laine_blanche", "teinture_noire", "", "", "", "", "", "", ""], result: "Laine noire"}]
+    },
+    {
+        id: "potion_healing",
+        name: "Potion de soin",
+        icon: "🧪",
+        category: "food",
+        description: "Restaure 4 points de vie instantanément",
+        properties: ["Instantané", "Curatif", "Buvable"],
+        obtention: "Alchimie avec pastèque scintillante",
+        recipes: []
+    },
+    {
+        id: "potion_fire_resistance",
+        name: "Potion de résistance au feu",
+        icon: "🔥",
+        category: "food",
+        description: "Immunité aux dégâts de feu et lave (3 min)",
+        properties: ["Durée: 3min", "Immunité feu", "Buvable"],
+        obtention: "Alchimie avec crème de magma",
+        recipes: []
+    },
+    {
+        id: "potion_regeneration",
+        name: "Potion de régénération",
+        icon: "💚",
+        category: "food",
+        description: "Régénère la vie lentement (45s)",
+        properties: ["Durée: 45s", "Régénération", "Buvable"],
+        obtention: "Alchimie avec larme de ghast",
+        recipes: []
+    },
+    {
+        id: "potion_strength",
+        name: "Potion de force",
+        icon: "💪",
+        category: "food",
+        description: "Augmente les dégâts de mêlée (3 min)",
+        properties: ["Durée: 3min", "+3 dégâts", "Buvable"],
+        obtention: "Alchimie avec poudre de blaze",
+        recipes: []
+    },
+    {
+        id: "potion_swiftness",
+        name: "Potion de rapidité",
+        icon: "💨",
+        category: "food",
+        description: "Augmente la vitesse de déplacement (3 min)",
+        properties: ["Durée: 3min", "+20% vitesse", "Buvable"],
+        obtention: "Alchimie avec sucre",
+        recipes: []
+    },
+    {
+        id: "potion_night_vision",
+        name: "Potion de vision nocturne",
+        icon: "👁️",
+        category: "food",
+        description: "Vision parfaite dans l'obscurité (3 min)",
+        properties: ["Durée: 3min", "Vision nocturne", "Buvable"],
+        obtention: "Alchimie avec carotte dorée",
+        recipes: []
+    },
+    {
+        id: "potion_water_breathing",
+        name: "Potion de respiration aquatique",
+        icon: "🌊",
+        category: "food",
+        description: "Respiration sous l'eau (3 min)",
+        properties: ["Durée: 3min", "Respiration aquatique", "Buvable"],
+        obtention: "Alchimie avec poisson-globe",
+        recipes: []
+    },
+    {
+        id: "potion_leaping",
+        name: "Potion de saut",
+        icon: "🦘",
+        category: "food",
+        description: "Augmente la hauteur de saut (3 min)",
+        properties: ["Durée: 3min", "+0.5 blocs saut", "Buvable"],
+        obtention: "Alchimie avec patte de lapin",
+        recipes: []
+    },
+    {
+        id: "potion_slow_falling",
+        name: "Potion de chute lente",
+        icon: "🪂",
+        category: "food",
+        description: "Ralentit la chute et réduit les dégâts (1:30)",
+        properties: ["Durée: 1min30", "Chute lente", "Buvable"],
+        obtention: "Alchimie avec membrane de phantom",
+        recipes: []
+    },
+    {
+        id: "spruce_planks",
+        name: "Planches de sapin",
+        icon: "🟫",
+        category: "blocks",
+        description: "Planches de bois de sapin",
+        properties: ["Inflammable", "Matériau de base", "Couleur foncée"],
+        obtention: "Craft avec bûche de sapin",
+        recipes: [{ingredients: ["bûche_sapin"], result: "4x Planches de sapin"}]
+    },
+    {
+        id: "birch_planks",
+        name: "Planches de bouleau",
+        icon: "🟫",
+        category: "blocks",
+        description: "Planches de bois de bouleau",
+        properties: ["Inflammable", "Matériau de base", "Couleur claire"],
+        obtention: "Craft avec bûche de bouleau",
+        recipes: [{ingredients: ["bûche_bouleau"], result: "4x Planches de bouleau"}]
+    },
+    {
+        id: "jungle_planks",
+        name: "Planches d'acajou",
+        icon: "🟫",
+        category: "blocks",
+        description: "Planches de bois d'acajou",
+        properties: ["Inflammable", "Matériau de base", "Couleur rouge"],
+        obtention: "Craft avec bûche d'acajou",
+        recipes: [{ingredients: ["bûche_acajou"], result: "4x Planches d'acajou"}]
+    },
+    {
+        id: "acacia_planks",
+        name: "Planches d'acacia",
+        icon: "🟫",
+        category: "blocks",
+        description: "Planches de bois d'acacia",
+        properties: ["Inflammable", "Matériau de base", "Couleur orange"],
+        obtention: "Craft avec bûche d'acacia",
+        recipes: [{ingredients: ["bûche_acacia"], result: "4x Planches d'acacia"}]
+    },
+    {
+        id: "dark_oak_planks",
+        name: "Planches de chêne noir",
+        icon: "🟫",
+        category: "blocks",
+        description: "Planches de bois de chêne noir",
+        properties: ["Inflammable", "Matériau de base", "Couleur sombre"],
+        obtention: "Craft avec bûche de chêne noir",
+        recipes: [{ingredients: ["bûche_chêne_noir"], result: "4x Planches de chêne noir"}]
+    },
+    {
+        id: "mangrove_planks",
+        name: "Planches de palétuvier",
+        icon: "🟫",
+        category: "blocks",
+        description: "Planches de bois de palétuvier",
+        properties: ["Inflammable", "Matériau de base", "Couleur rouge"],
+        obtention: "Craft avec bûche de palétuvier",
+        recipes: [{ingredients: ["bûche_palétuvier"], result: "4x Planches de palétuvier"}]
+    },
+    {
+        id: "cherry_planks",
+        name: "Planches de cerisier",
+        icon: "🌸",
+        category: "blocks",
+        description: "Planches de bois de cerisier rose",
+        properties: ["Inflammable", "Matériau de base", "Couleur rose"],
+        obtention: "Craft avec bûche de cerisier",
+        recipes: [{ingredients: ["bûche_cerisier"], result: "4x Planches de cerisier"}]
+    },
+    {
+        id: "bamboo_planks",
+        name: "Planches de bambou",
+        icon: "🎋",
+        category: "blocks",
+        description: "Planches de bambou",
+        properties: ["Inflammable", "Matériau de base", "Couleur jaune"],
+        obtention: "Craft avec bloc de bambou",
+        recipes: [{ingredients: ["bloc_bambou"], result: "2x Planches de bambou"}]
+    },
+    {
+        id: "crimson_planks",
+        name: "Planches carmin",
+        icon: "🔴",
+        category: "blocks",
+        description: "Planches de champignon carmin du Nether",
+        properties: ["Ignifuge", "Matériau de base", "Couleur rouge"],
+        obtention: "Craft avec tige carmin",
+        recipes: [{ingredients: ["tige_carmin"], result: "4x Planches carmin"}]
+    },
+    {
+        id: "warped_planks",
+        name: "Planches biscornues",
+        icon: "🔵",
+        category: "blocks",
+        description: "Planches de champignon biscornu du Nether",
+        properties: ["Ignifuge", "Matériau de base", "Couleur cyan"],
+        obtention: "Craft avec tige biscornue",
+        recipes: [{ingredients: ["tige_biscornue"], result: "4x Planches biscornues"}]
     }
 ];
