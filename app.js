@@ -2,6 +2,8 @@ let currentCategory = 'all';
 let searchTerm = '';
 
 function getItemTexture(itemId) {
+    const gifItems = ['compass', 'clock'];
+    
     const textureMap = {
         'dirt': 'Dirt',
         'grass_block': 'Grass_Block',
@@ -178,7 +180,8 @@ function getItemTexture(itemId) {
     };
     
     const textureName = textureMap[itemId] || itemId;
-    return `https://minecraft.wiki/images/Invicon_${textureName}.png`;
+    const extension = gifItems.includes(itemId) ? 'gif' : 'png';
+    return `https://minecraft.wiki/images/Invicon_${textureName}.${extension}`;
 }
 
 function renderItems(items) {
@@ -293,6 +296,8 @@ function showModal(item) {
 }
 
 function getIngredientTexture(ingredient) {
+    const gifIngredients = ['boussole', 'horloge'];
+    
     const textureMap = {
         'planches': 'Oak_Planks',
         'bâton': 'Stick',
@@ -373,7 +378,8 @@ function getIngredientTexture(ingredient) {
     };
     
     const textureName = textureMap[ingredient] || ingredient;
-    return `https://minecraft.wiki/images/Invicon_${textureName}.png`;
+    const extension = gifIngredients.includes(ingredient) ? 'gif' : 'png';
+    return `https://minecraft.wiki/images/Invicon_${textureName}.${extension}`;
 }
 
 function getIngredientName(ingredient) {
