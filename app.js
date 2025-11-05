@@ -57,7 +57,7 @@ function showModal(item) {
                     <div class="recipe-container">
                         <div class="recipe-grid">
                             ${recipe.ingredients.map((ing, idx) => `
-                                <div class="recipe-slot">${ing ? getIngredientEmoji(ing) : ''}</div>
+                                <div class="recipe-slot" title="${ing ? getIngredientName(ing) : ''}">${ing ? getIngredientEmoji(ing) : ''}</div>
                             `).join('')}
                         </div>
                         <div class="recipe-arrow">⬇️</div>
@@ -108,6 +108,88 @@ function showModal(item) {
     `;
 
     modal.style.display = 'block';
+}
+
+function getIngredientName(ingredient) {
+    const nameMap = {
+        'planches': 'Planches',
+        'bâton': 'Bâton',
+        'roche': 'Roche',
+        'pierre': 'Pierre',
+        'fer': 'Lingot de fer',
+        'or': 'Lingot d\'or',
+        'diamant': 'Diamant',
+        'charbon': 'Charbon',
+        'redstone': 'Poudre de redstone',
+        'laine': 'Laine',
+        'bûche': 'Bûche',
+        'verre': 'Verre',
+        'obsidienne': 'Obsidienne',
+        'livre': 'Livre',
+        'papier': 'Papier',
+        'cuir': 'Cuir',
+        'ficelle': 'Ficelle',
+        'silex': 'Silex',
+        'plume': 'Plume',
+        'blé': 'Blé',
+        'sucre': 'Sucre',
+        'œuf': 'Œuf',
+        'lait': 'Seau de lait',
+        'cacao': 'Fèves de cacao',
+        'os': 'Os',
+        'poudre': 'Poudre à canon',
+        'sable': 'Sable',
+        'canne': 'Canne à sucre',
+        'boussole': 'Boussole',
+        'coffre': 'Coffre',
+        'arc': 'Arc',
+        'piston': 'Piston',
+        'slime': 'Boule de slime',
+        'quartz': 'Quartz du Nether',
+        'torche_rs': 'Torche de redstone',
+        'blaze_rod': 'Bâton de blaze',
+        'fer_bloc': 'Bloc de fer',
+        'perle_ender': 'Perle de l\'Ender',
+        'poudre_blaze': 'Poudre de blaze',
+        'œil_ender': 'Œil de l\'Ender',
+        'carapace_shulker': 'Carapace de shulker',
+        'étoile_nether': 'Étoile du Nether',
+        'débris': 'Débris antiques',
+        'coquille': 'Coquille de nautile',
+        'cœur_mer': 'Cœur de la mer',
+        'pomme': 'Pomme',
+        'cuivre': 'Lingot de cuivre',
+        'améthyste': 'Éclat d\'améthyste',
+        'crochet': 'Crochet',
+        'écaille': 'Écaille de tortue',
+        'laine_blanche': 'Laine blanche',
+        'teinture_orange': 'Teinture orange',
+        'teinture_magenta': 'Teinture magenta',
+        'teinture_bleu_clair': 'Teinture bleu clair',
+        'teinture_jaune': 'Teinture jaune',
+        'teinture_vert_clair': 'Teinture vert clair',
+        'teinture_rose': 'Teinture rose',
+        'teinture_grise': 'Teinture grise',
+        'teinture_gris_clair': 'Teinture gris clair',
+        'teinture_cyan': 'Teinture cyan',
+        'teinture_violette': 'Teinture violette',
+        'teinture_bleue': 'Teinture bleue',
+        'teinture_marron': 'Teinture marron',
+        'teinture_verte': 'Teinture verte',
+        'teinture_rouge': 'Teinture rouge',
+        'teinture_noire': 'Teinture noire',
+        'bûche_sapin': 'Bûche de sapin',
+        'bûche_bouleau': 'Bûche de bouleau',
+        'bûche_acajou': 'Bûche d\'acajou',
+        'bûche_acacia': 'Bûche d\'acacia',
+        'bûche_chêne_noir': 'Bûche de chêne noir',
+        'bûche_palétuvier': 'Bûche de palétuvier',
+        'bûche_cerisier': 'Bûche de cerisier',
+        'bloc_bambou': 'Bloc de bambou',
+        'tige_carmin': 'Tige carmin',
+        'tige_biscornue': 'Tige biscornue'
+    };
+    return nameMap[ingredient] || ingredient;
 }
 
 function getIngredientEmoji(ingredient) {
