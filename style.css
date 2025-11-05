@@ -121,6 +121,18 @@ header {
     font-size: 3rem;
     text-align: center;
     margin-bottom: 15px;
+    min-height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-icon img {
+    width: 64px;
+    height: 64px;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
 }
 
 .item-name {
@@ -183,6 +195,18 @@ header {
 .modal-icon {
     font-size: 4rem;
     margin-bottom: 20px;
+    min-height: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-icon img {
+    width: 128px;
+    height: 128px;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
 }
 
 .modal-title {
@@ -290,6 +314,18 @@ header {
 
 .result-icon {
     font-size: 3rem;
+    min-height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result-icon img {
+    width: 64px;
+    height: 64px;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
 }
 
 .result-text {
