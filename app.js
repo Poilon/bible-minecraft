@@ -23,7 +23,7 @@ function getItemTexture(itemId) {
         'diamond_ore': 'Diamond_Ore',
         'diamond': 'Diamond',
         'emerald': 'Emerald',
-        'redstone': 'Redstone_Dust',
+        'redstone': 'Redstone',
         'lapis_lazuli': 'Lapis_Lazuli',
         'wooden_pickaxe': 'Wooden_Pickaxe',
         'stone_pickaxe': 'Stone_Pickaxe',
@@ -237,7 +237,9 @@ function showModal(item) {
                     <div class="recipe-container">
                         <div class="recipe-grid">
                             ${recipe.ingredients.map((ing, idx) => `
-                                <div class="recipe-slot" title="${ing ? getIngredientName(ing) : ''}">${ing ? getIngredientEmoji(ing) : ''}</div>
+                                <div class="recipe-slot" title="${ing ? getIngredientName(ing) : ''}">
+                                    ${ing ? `<img src="${getIngredientTexture(ing)}" alt="${getIngredientName(ing)}" onerror="this.style.display='none'; this.nextSibling.style.display='inline'"><span style="display:none">${getIngredientEmoji(ing)}</span>` : ''}
+                                </div>
                             `).join('')}
                         </div>
                         <div class="recipe-arrow">⬇️</div>
@@ -288,6 +290,90 @@ function showModal(item) {
     `;
 
     modal.style.display = 'block';
+}
+
+function getIngredientTexture(ingredient) {
+    const textureMap = {
+        'planches': 'Oak_Planks',
+        'bâton': 'Stick',
+        'roche': 'Cobblestone',
+        'pierre': 'Stone',
+        'fer': 'Iron_Ingot',
+        'or': 'Gold_Ingot',
+        'diamant': 'Diamond',
+        'charbon': 'Coal',
+        'redstone': 'Redstone',
+        'laine': 'White_Wool',
+        'bûche': 'Oak_Log',
+        'verre': 'Glass',
+        'obsidienne': 'Obsidian',
+        'livre': 'Book',
+        'papier': 'Paper',
+        'cuir': 'Leather',
+        'ficelle': 'String',
+        'silex': 'Flint',
+        'plume': 'Feather',
+        'blé': 'Wheat',
+        'sucre': 'Sugar',
+        'œuf': 'Egg',
+        'lait': 'Milk_Bucket',
+        'cacao': 'Cocoa_Beans',
+        'os': 'Bone',
+        'poudre': 'Gunpowder',
+        'sable': 'Sand',
+        'canne': 'Sugar_Cane',
+        'boussole': 'Compass',
+        'coffre': 'Chest',
+        'arc': 'Bow',
+        'piston': 'Piston',
+        'slime': 'Slime_Ball',
+        'quartz': 'Nether_Quartz',
+        'torche_rs': 'Redstone_Torch',
+        'blaze_rod': 'Blaze_Rod',
+        'fer_bloc': 'Block_of_Iron',
+        'perle_ender': 'Ender_Pearl',
+        'poudre_blaze': 'Blaze_Powder',
+        'œil_ender': 'Eye_of_Ender',
+        'carapace_shulker': 'Shulker_Shell',
+        'étoile_nether': 'Nether_Star',
+        'débris': 'Ancient_Debris',
+        'coquille': 'Nautilus_Shell',
+        'cœur_mer': 'Heart_of_the_Sea',
+        'pomme': 'Apple',
+        'cuivre': 'Copper_Ingot',
+        'améthyste': 'Amethyst_Shard',
+        'crochet': 'Tripwire_Hook',
+        'écaille': 'Scute',
+        'laine_blanche': 'White_Wool',
+        'teinture_orange': 'Orange_Dye',
+        'teinture_magenta': 'Magenta_Dye',
+        'teinture_bleu_clair': 'Light_Blue_Dye',
+        'teinture_jaune': 'Yellow_Dye',
+        'teinture_vert_clair': 'Lime_Dye',
+        'teinture_rose': 'Pink_Dye',
+        'teinture_grise': 'Gray_Dye',
+        'teinture_gris_clair': 'Light_Gray_Dye',
+        'teinture_cyan': 'Cyan_Dye',
+        'teinture_violette': 'Purple_Dye',
+        'teinture_bleue': 'Blue_Dye',
+        'teinture_marron': 'Brown_Dye',
+        'teinture_verte': 'Green_Dye',
+        'teinture_rouge': 'Red_Dye',
+        'teinture_noire': 'Black_Dye',
+        'bûche_sapin': 'Spruce_Log',
+        'bûche_bouleau': 'Birch_Log',
+        'bûche_acajou': 'Jungle_Log',
+        'bûche_acacia': 'Acacia_Log',
+        'bûche_chêne_noir': 'Dark_Oak_Log',
+        'bûche_palétuvier': 'Mangrove_Log',
+        'bûche_cerisier': 'Cherry_Log',
+        'bloc_bambou': 'Block_of_Bamboo',
+        'tige_carmin': 'Crimson_Stem',
+        'tige_biscornue': 'Warped_Stem'
+    };
+    
+    const textureName = textureMap[ingredient] || ingredient;
+    return `https://minecraft.wiki/images/Invicon_${textureName}.png`;
 }
 
 function getIngredientName(ingredient) {
